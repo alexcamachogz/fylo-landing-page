@@ -302,7 +302,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
   padding-top: 100px;
 }
 
@@ -354,6 +354,8 @@ a {
   padding: 30px;
   text-align: center;
   width: 80%;
+  position: relative;
+  top: 150px;
 }
 
 .email__form .email__input {
@@ -379,6 +381,60 @@ a {
 .email__form .email__btn {
   width: 100%;
 }
+
+/* Footer */
+.footer {
+  background-color: var(--dark-blue-footer);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 200px 20px 50px 20px;
+}
+
+.footer__info .info__direction,
+.footer__info .info__phone,
+.footer__info .info__email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  font-size: 1.6rem;
+}
+
+.footer__info .info__direction .fas,
+.footer__info .info__phone .fas,
+.footer__info .info__email .fas {
+  font-size: 2rem;
+}
+
+.footer .footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .footer__navigation ul > li {
+  font-size: 1.8rem;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.footer .footer__social-media {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .footer__social-media span {
+  border: 1px solid var(--white);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5rem;
+  margin-right: 10px;
+}
+
+
 
 /* Desktop */
 @media screen and (min-width: 900px) {
@@ -509,6 +565,7 @@ a {
   /* Email */
   .email {
     width: 45%;
+    box-shadow: 6px 6px 6px -1px #17191F;
   }
 
   .email .email__description {
