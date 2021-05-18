@@ -203,10 +203,10 @@ a {
 
 /* Features */
 .features {
+  align-items: center;
   background-color: var(--dark-blue-main);
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 80px;
   padding-top: 100px;
 }
@@ -215,9 +215,9 @@ a {
 .features .features__security,
 .features .features__collaboration,
 .features .features__store {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
   text-align: center;
   width: 85%;
@@ -270,4 +270,38 @@ a {
   .main .main__btn {
     width: 250px;
   }
+
+  /* Features */
+  .container {
+    background-color: var(--dark-blue-main);
+  }
+  
+  .features {
+    display: grid;
+    grid-template-areas:
+    "features__files features__security"
+    "features__collaboration features__store";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    justify-items: center;
+    width: 60%;
+  }
+
+  .features__files {
+    grid-area: features__files;
+  }
+
+  .features__security {
+    grid-area: features__security;
+  }
+
+  .features__collaboration {
+    grid-area: features__collaboration;
+  }
+
+  .features__store {
+    grid-area: features__store;
+  }
+
 }
