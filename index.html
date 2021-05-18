@@ -12,23 +12,32 @@
 </head>
 <body>
 
-  <header class="header">
+<header class="header">
+  <figure class="header__image">
+    <img src="./images/logo.svg" alt="Fylo"/>
+  </figure>
 
-      <figure class="header__image">
-        <img src="./images/logo.svg" alt="Fylo" />
-      </figure>
+  <input class="header__btn" type="checkbox" id="menu-btn"/>
+  <label class="header__icon" for="menu-btn"><span class="icon"></span></label>
 
-      <input class="header__btn" type="checkbox" id="menu-btn" />
-      <label class="header__icon" for="menu-btn"><span class="icon"></span></label>
+  <nav class="header__menu">
+    <ul class="menu">
+      <li><a href="#" class="menu__link">Features</a></li>
+      <li><a href="#" class="menu__link">Team</a></li>
+      <li><a href="#" class="menu__link">Sign In</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <nav class="header__menu">
-      <ul class="menu">
-        <li><a href="#" class="menu__link">Features</a></li>
-        <li><a href="#" class="menu__link">Team</a></li>
-        <li><a href="#" class="menu__link">Sign In</a></li>
-      </ul>
-    </nav>
-  </header>
+<main class="main">
+  <figure class="main__image">
+    <img src="./images/illustration-intro.png" alt="">
+  </figure>
+  <h1 class="main__title">All your files in one secure location, accessible anywhere.</h1>
+  <p class="main__description">Fylo stores all your most important files in one secure location. Access them wherever
+    you need, share and collaborate with friends, family, and co-workers.</p>
+  <button class="btn main__btn">Get Started</button>
+</main>
 
 </body>
 </html>
