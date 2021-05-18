@@ -237,11 +237,11 @@ a {
 
 /* Productive */
 .productive {
-  padding-top: 100px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 35px;
-  align-items: center;
+  padding-top: 100px;
 }
 
 .productive .productive__image {
@@ -253,10 +253,10 @@ a {
 }
 
 .productive__content {
-  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 80%;
 }
 
 .productive__content .content__title {
@@ -270,11 +270,11 @@ a {
 }
 
 .content__show-more {
-  height: 25px;
-  display: flex;
   align-items: center;
-  width: 130px;
   border-bottom: 1px solid transparent;
+  display: flex;
+  height: 25px;
+  width: 130px;
 }
 
 .content__show-more .show-more__link {
@@ -294,6 +294,50 @@ a {
 
 .content__show-more:hover {
   border-bottom: 1px solid var(--white);
+}
+
+/* Testimonials */
+.testimonials {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.testimonials::before {
+  content: url("./images/bg-quotes.png");
+  display: block;
+  position: relative;
+  top: 50px;
+  right: 120px;
+  transform: scale(0.5);
+}
+
+.testimonials .testimonials__box {
+  width: 80%;
+  background-color: var(--dark-blue-testimonials);
+  padding: 25px;
+  border-radius: 1rem;
+}
+.testimonials__box .testimonials__description {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+
+.testimonials .testimonial__person {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.testimonial__person .person__image {
+  width: 40px;
+}
+
+.testimonial__person .person__image img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 /* Desktop */
@@ -352,8 +396,8 @@ a {
     "features__collaboration features__store";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
     justify-items: center;
+    margin: 0 auto;
     width: 60%;
   }
 
@@ -371,6 +415,33 @@ a {
 
   .features__store {
     grid-area: features__store;
+  }
+
+  /* Productive */
+  .productive {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .productive .productive__image {
+    width: 40%;
+  }
+
+  .productive__content {
+    width: 40%;
+  }
+
+  .productive__content .content__title {
+    font-size: 3rem;
+    text-align: left;
+    width: 50%;
+  }
+
+  .productive__content .content__paragraph {
+    font-size: 1.5rem;
   }
 
 }
