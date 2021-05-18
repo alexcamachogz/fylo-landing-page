@@ -12,12 +12,23 @@
 </head>
 <body>
 
-  <header>
-    <figure>
-      <img src="./images/logo.svg" alt="">
-    </figure>
-  </header>
+  <header class="header">
 
+      <figure class="header__image">
+        <img src="./images/logo.svg" alt="Fylo" />
+      </figure>
+
+      <input class="header__btn" type="checkbox" id="menu-btn" />
+      <label class="header__icon" for="menu-btn"><span class="icon"></span></label>
+
+    <nav class="header__menu">
+      <ul class="menu">
+        <li><a href="#" class="menu__link">Features</a></li>
+        <li><a href="#" class="menu__link">Team</a></li>
+        <li><a href="#" class="menu__link">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
 
 </body>
 </html>
