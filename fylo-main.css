@@ -444,4 +444,26 @@ a {
     font-size: 1.5rem;
   }
 
+  /* Testimonials */
+  .testimonials {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .testimonials::before {
+    top: -98px;
+    right: -75px;
+    transform: scale(1);
+  }
+
+  .testimonials .testimonials__box {
+    z-index: 1;
+    width: 400px;
+  }
+
+  .testimonials__box .testimonials__description {
+    font-size: 1.4rem;
+  }
+
 }
