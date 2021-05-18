@@ -56,6 +56,10 @@ a {
   transform: matrix(0.95, 0, 0, 0.95, 0, 0);
 }
 
+.container {
+  background-color: var(--dark-blue-main);
+}
+
 /* Mobile first */
 /* Header */
 .header {
@@ -186,13 +190,13 @@ a {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   line-height: 4.5rem;
-  width: 90%;
+  width: 80%;
 }
 
 .main .main__description {
   font-size: 1.6rem;
   line-height: 2.8rem;
-  width: 90%;
+  width: 80%;
 }
 
 .main .main__btn {
@@ -211,6 +215,14 @@ a {
   padding-top: 100px;
 }
 
+.features .files__title,
+.features .security__title,
+.features .collaboration__title,
+.features .store__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+}
+
 .features .features__files,
 .features .features__security,
 .features .features__collaboration,
@@ -221,6 +233,67 @@ a {
   gap: 20px;
   text-align: center;
   width: 85%;
+}
+
+/* Productive */
+.productive {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.productive .productive__image {
+  width: 80%;
+}
+
+.productive .productive__image img {
+  width: 100%;
+}
+
+.productive__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productive__content .content__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.productive__content .content__paragraph {
+  font-size: 1.3rem;
+}
+
+.content__show-more {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  border-bottom: 1px solid transparent;
+}
+
+.content__show-more .show-more__link {
+  color: var(--cyaan);
+  font-size: 1.2rem;
+  padding-right: .5rem;
+}
+
+.content__show-more:hover use {
+  fill: var(--white);
+}
+
+.content__show-more .show-more__link:hover {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.content__show-more:hover {
+  border-bottom: 1px solid var(--white);
 }
 
 /* Desktop */
@@ -272,10 +345,6 @@ a {
   }
 
   /* Features */
-  .container {
-    background-color: var(--dark-blue-main);
-  }
-  
   .features {
     display: grid;
     grid-template-areas:
