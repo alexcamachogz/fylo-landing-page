@@ -141,3 +141,29 @@ a {
 .header .header__btn:checked ~ .header__icon:not(steps) .icon:after {
   top: 0;
 }
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+  /* Header */
+  .header li {
+    float: left;
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+
+  .header li .menu__link {
+    width: 10rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .header__icon {
+    display: none;
+  }
+}
