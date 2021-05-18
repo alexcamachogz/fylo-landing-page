@@ -303,6 +303,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 35px;
+  padding-bottom: 100px;
 }
 
 .testimonials::before {
@@ -338,6 +339,43 @@ a {
 .testimonial__person .person__image img {
   width: 100%;
   border-radius: 50%;
+}
+
+/* Email */
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--dark-blue-intro);
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.email__form .email__input {
+  width: 100%;
+  border-radius: 5rem;
+  height: 55px;
+  border: 0;
+  padding-left: 20px;
+  color: var(--dark-blue-footer);
+  margin-bottom: 20px;
+}
+::-webkit-input-placeholder {
+  color: #CCC;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.email__form .email__input:focus {
+  outline: 0;
+}
+
+.email__form .email__btn {
+  width: 100%;
 }
 
 /* Desktop */
