@@ -28,12 +28,12 @@ Not dependencies are required for this project.
 
 <details>
   <summary id="desktop">🖥 Desktop version</summary>    
-  ![](./images/desktop-view.png)
+  <img src="./images/desktop-view.png" alt="Desktop view">
 </details>
 
 <details>
-  <summary>📱 Mobile version</summary>  
-  ![](./images/mobile-view.png)
+  <summary id="mobile">📱 Mobile version</summary>  
+  <img src="./images/mobile-view.png" alt="Mobile view">
 </details>
 
 <h2 id="technologies">📌 Technologies</h2>
